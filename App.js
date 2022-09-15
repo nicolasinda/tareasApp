@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginVertical: 10,
-    backgroundColor: '#9F84BD',
+    backgroundColor: '#F5E960',
     paddingHorizontal: 10,
     paddingVertical: 20,
     borderRadius: 5,
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
   },
   button: {
-    backgroundColor: '#4A306D',
+    backgroundColor: '#ffad05',
     padding: 10,
     borderRadius: 10,
   }
@@ -82,7 +82,6 @@ export default function App() {
   const [selectedTask, setSelectedTask] = useState(null);
 
   const onHandleChangeText = (text) => {
-    console.warn('text', text);
     setTask(text);
   }
 
@@ -121,10 +120,10 @@ export default function App() {
         onChangeText={onHandleChangeText}
         placeholder='Ingrese una tarea'
         addItem={addItem}
-        selectionColor='#4A306D'
-        placeholderTextColor='#4A306D'
+        selectionColor='#ffad05'
+        placeholderTextColor='#ffad05'
         textButton='ADD'
-        color='#4A306D'
+        color='#ffad05'
       />
       <FlatList
         style={styles.itemList}
@@ -147,7 +146,7 @@ export default function App() {
           <Button 
             title='Eliminar'
             onPress={() => onHandleDeleteItem(selectedTask?.id)}
-            color='#4A306D'
+            color='#ffad05'
           />
           <Button 
             title='Cancelar'
