@@ -119,7 +119,7 @@ export default function App() {
       <AddTask 
         item={task}
         onChangeText={onHandleChangeText}
-        placeholder='new task'
+        placeholder='Ingrese una tarea'
         addItem={addItem}
         selectionColor='#4A306D'
         placeholderTextColor='#4A306D'
